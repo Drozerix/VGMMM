@@ -1,0 +1,43 @@
+<RCC>
+  <qresource prefix="/">
+    <file>default.kbd</file>
+    <file>img/TFORMABOUT_ImageLogo.png</file>
+    <file>img/TFORMMAIN_FormMain.ico</file>
+    <file>img/TFORMMAIN_ImageAOff.png</file>
+    <file>img/TFORMMAIN_ImageEG1.png</file>
+    <file>img/TFORMMAIN_ImageEG2.png</file>
+    <file>img/TFORMMAIN_ImageEG3.png</file>
+    <file>img/TFORMMAIN_ImageEG4.png</file>
+    <file>img/TFORMMAIN_ImageKeys.png</file>
+    <file>img/TFORMMAIN_ImageKnob.png</file>
+    <file>img/TFORMMAIN_ImageListAM_n2_16x24.png</file>
+    <file>img/TFORMMAIN_ImageListAlgo_n8_85x44.png</file>
+    <file>img/TFORMMAIN_ImageListEG_n9_44x22.png</file>
+    <file>img/TFORMMAIN_SpeedButtonColorCtrl.png</file>
+    <file>img/TFORMMAIN_SpeedButtonColorsDefault.png</file>
+    <file>img/TFORMMAIN_SpeedButtonInsExch.png</file>
+    <file>img/TFORMMAIN_SpeedButtonInsNew.png</file>
+    <file>img/TFORMMAIN_SpeedButtonInsOpen.png</file>
+    <file>img/TFORMMAIN_SpeedButtonInsSave.png</file>
+    <file>img/TFORMMAIN_SpeedButtonKBDDefault.png</file>
+    <file>img/TFORMMAIN_SpeedButtonKBDLoad.png</file>
+    <file>img/TFORMMAIN_SpeedButtonModNew.png</file>
+    <file>img/TFORMMAIN_SpeedButtonModOpen.png</file>
+    <file>img/TFORMMAIN_SpeedButtonModSave.png</file>
+    <file>img/TFORMMAIN_SpeedButtonOpExch.png</file>
+    <file>img/TFORMMAIN_SpeedButtonPlayAll.png</file>
+    <file>img/TFORMMAIN_SpeedButtonPlayPos.png</file>
+    <file>img/TFORMMAIN_SpeedButtonPlayPtn.png</file>
+    <file>img/TFORMMAIN_SpeedButtonReset.png</file>
+    <file>img/TFORMMAIN_SpeedButtonResetOp1.png</file>
+    <file>img/TFORMMAIN_SpeedButtonResetOp2.png</file>
+    <file>img/TFORMMAIN_SpeedButtonResetOp3.png</file>
+    <file>img/TFORMMAIN_SpeedButtonResetOp4.png</file>
+    <file>img/TFORMMAIN_SpeedButtonSampleClear.png</file>
+    <file>img/TFORMMAIN_SpeedButtonSampleExchange.png</file>
+    <file>img/TFORMMAIN_SpeedButtonSampleLoad.png</file>
+    <file>img/TFORMMAIN_SpeedButtonSampleTest.png</file>
+    <file>img/TFORMMAIN_SpeedButtonStop.png</file>
+    <file>img/TFORMMAIN_SpeedButtonTestSignal.png</file>
+  </qresource>
+</RCC>

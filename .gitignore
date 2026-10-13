@@ -1,0 +1,9 @@
+build/
+tools/
+*.user
+*.a
+*.o
+
+#Not sure what the copyright is for this, so I am excluding it
+tfi_instruments/games_tfi_banks_by_Robugaa
+

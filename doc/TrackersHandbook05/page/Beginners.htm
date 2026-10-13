@@ -1,0 +1,623 @@
+<HTML>
+<HEAD>
+	<TITLE>Trackers Handbook - Beginners</TITLE>
+	<LINK REL="stylesheet" 
+	 TYPE="text/css" 
+	 HREF="style.css" 
+	 TITLE="formal">
+</HEAD>
+
+<BODY BGCOLOR="#888800" LINK="#000088" VLINK="#880000" ALINK="#FFFFCC" BACKGROUND="../images/backg.jpg">
+
+<center><h1>Beginners</h1></center>
+<a href="Beginners.htm#help">Help!</a>&nbsp;-&nbsp;
+<a href="Beginners.htm#tracker">What's a Tracker</a>&nbsp;-&nbsp;
+<a href="Beginners.htm#ctracker">Choosing a Tracker</a>&nbsp;-&nbsp;
+<a href="Beginners.htm#hardware">Getting Started</a>&nbsp;-&nbsp;
+<a href="Beginners.htm#resources">Ordering your resources</a>&nbsp;-&nbsp;
+<a href="Beginners.htm#letsgo">Let's go</a>&nbsp;-&nbsp;
+<a href="Beginners.htm#effects">The Effects Commands</a>&nbsp;-&nbsp;
+<a href="Beginners.htm#sampling">Sampling</a>&nbsp;-&nbsp;
+<a href="Beginners.htm#ripping">Ripping</a>&nbsp;-&nbsp;
+<a href="Beginners.htm#copyright">Copyright</a>&nbsp;-&nbsp;
+<a href="Beginners.htm#releasing">Releasing</a>&nbsp;-&nbsp;
+<hr>
+<a name="help"></a>
+<h3>   Help!  I don't know where to start!</h3>
+ <p>  Being at the beginner stage is possibly the most difficult part of
+tracking, and it's where most people give up.  The key is perseverance and
+practice.  Listen to what others have to say about your initial attempts, but
+only listen if you know you'll get an honest opinion from them.  Take on
+board any criticism, and use it to your advantage.  Practice makes perfect,
+the more modules you compose, and sampling you do, the better you'll get,
+simple...</p>
+<a name="tracker"></a>
+   <h3>Erm, just what is a tracker?</h3>
+<p>   A tracker is a piece of software that allows music to be made using only a
+computer and some sound samples.  These sound samples are then played back at
+varying pitches and with various effects so as to produce music.  The musical
+data used to describe how to play each note is arranged in a list like form,
+as shown below.</p>
+<pre>
+   Note   Instrument   Volume   Effect command   Effect parameters
+    C#5        1          40            1                01
+
+        C#5 1 40 101    F-6 2 38 330    G-3 3 20 F05    ---   -- 000
+        ---   -- 102    ---   -- 300    D-2 3 24 A0F    C-4 4 -- 472
+        C#5 5 -- E93    ---   -- 300    --- 3 P0 A0F    ---   -- 400
+</pre>
+<p>This data scrolls up the screen, and when it passes the cursor it gets
+processed and played.  Not all trackers have this same layout; I've used FT2
+above.<br>
+   Trackers produce files called modules, which is usually abbreviated to
+MOD.  The term MOD originally meant a SoundTracker module, but over the years
+it has become a generic term for any type of module.  MODs are a sort of
+hybrid MIDI/sample file.  They contain sequencing information as well as the
+instruments (samples) that are used for playback.<br>
+   It's actually quite hard to give trackers and MODs a 'definition' that can
+be understood by everyone.  If you have Internet access then do a search for
+'MOD Trackers' and quite a number of definitions should pop up.</p>
+   <a name="ctracker"></a>
+   <h3>Choosing a tracker</h3>
+
+   <p>May as well start at the beginning I suppose...</p>
+
+<p>Choosing a tracker to begin with is probably the most important choice you
+can make as you start out, some trackers have extremely difficult interfaces
+to learn.  Which, if you are only just starting out and have never used a
+tracker before, pose an extra challenge that will need to be undertaken.</p>
+
+   There are six systems with trackers that I know of, classified as -<br>
+   <ul> <li>Amiga
+   		<li>DOS
+		<li>Windows 3.1/9x/NT
+		<li>Mac
+		<li>Unix/Linux/Sun/NeXT
+		<li>Atari</ul>
+
+   <p>Obviously the system you own dictates what you can use, but the Amiga,
+Atari, and Mac based trackers are split up into a few different areas,
+depending on your hardware.<br>
+   Whatever tracker you decide on using, before you even start tracking with
+it, be sure to read the manual.  Load a few already made modules in so you
+can play around with the various features and find out how they work.  Spend
+a day figuring out every feature of the tracker.<br>
+   The only way to find out what tracker is best for you is to try out a few
+and then decide.  I would recommend that you choose a tracker that produces a
+standard module format for the platform you are producing on e.g. if you own
+an Amiga a MOD based tracker would be a good choice, on a PC an IT or XM
+tracker would be a good choice etc.<br>
+   Don't use a tracker just because someone else does, or because it offers
+more features.  Choose a tracker for its interface every time.  There's no
+point having something hugely powerful but not being able to use it.</p>
+	<a name="hardware"></a>
+   <h3>Choosing Hardware</h3>
+
+<p>   The basic hardware requirements to track are: -</p>
+
+   <p>A computer - You probably already have one of these.  If you don't, then
+how on earth are you reading this!  Your computer MUST have some sort of
+digital audio capabilities.  If you have an Amiga, Atari, or Mac then you
+should be okay for now.  If you have a PC (and by that I don't necessarily
+mean an IBM compatible) without a digital sound card of some description,
+then you're finished before you've even started.  Go out and get one now!</p>
+
+   <p>Monitoring Equipment – All that’s needed is a pair of speakers and/or a
+pair of headphones.  Since we're talking about basic requirements here,
+practically anything will do to get you started.</p>
+
+   <h3>Getting Started</h3>
+   
+   <p>Ok, so you've got hold of a tracker that you like the look and feel of,
+the next thing to do is to get hold of some samples and/or modules.  These
+should preferably be in a style that you like and be of a reasonable quality.
+Just go to the Internet resources section for a list of places to look.  If
+you don't have Internet access, then any local shareware libraries or BBS
+system should be able to sort you out with some.  Samples are preferable to
+modules, but it's easy enough to rip the samples out of modules.<br>
+Alternatively, you could sample your own sounds, but this can be quite
+difficult to do if you don't know what you generally use or need.  As you
+don't yet know how to track properly yet, I would recommend you choose which
+to learn first, tracking or sampling.  This will ease the learning curve.  If
+you want to learn the key points to good sampling, skip to the sampling
+section.  When you've finished that, come back here.</p>
+   <a name="resources"></a>
+   <h3>Ordering your resources</h3>
+
+   <p>First of all you'll need to set up a few directories in which to store
+your music stuff.  There are many different ways to do this, but I'll
+describe mine for you to have a base to build on.  Obviously you don't have
+to follow this.  It's just to give you an idea of a structure.<br>
+   I use a separate partition or CD-ROM for my music stuff.  This brings
+benefits such as easy organisation and security from corruption on other
+disks/partitions.<br>
+   The structure of this is as follows: -</p>
+
+<pre>E:\FT2                                 - Fasttracker II and its utilities
+  \HANDBOOK                            - The Tracker’s Handbook
+  \INSTR                               - Instruments
+  \IT                                  - Impulse Tracker and its utilities
+  \MODULES                             - Other trackers modules
+  \MYMODS                              - My modules
+         \8-BIT                        - 8-Bit versions of my modules
+  \PATTERNS                            - Saved Pattern data
+  \RESOURCS                            - Holds tracking guides etc.
+  \SAMPLES                             - Hmm, I wonder...
+         \309                          - Quasimidi Rave-O-Lution 309
+         \BASS
+         \BRASS                        - Brass Instruments
+         \BREAKBTS                     - Breakbeats
+         \DRUMKIT
+                 \BASSDRUM
+                 \CLAP
+                 \CLOSEHH
+                 \CRASH
+                 \MISC                 - Shakers, tambourines
+                 \OPENHH
+                 \RIMSHOT
+                 \SNARE
+                 \TOM
+                 \TR-606               - Roland TR-606
+                 \TR-808               - Roland TR-808
+                 \TR-909               - Roland TR-909
+         \DSS-1                        - Korg DSS-1
+         \FX                           - Sound Effects
+         \GUITAR
+         \JP8000                       - Roland JP8000
+         \JUNO60                       - Roland Juno 60
+         \MC-202                       - Roland MC-202
+         \PADS                         - Looped synth and string sounds
+         \PIANO
+         \SH-101                       - Roland SH-101
+         \SYNTH                        - Synth stabs and hits
+         \VOCALS
+         \WIND                         - Wind Instruments
+  \TRACKS                              - Saved Track data
+  \UNFINISH                            - Unfinished Modules</pre>
+
+   <p>This allows me quick access to the samples I want (I can remember what
+most of them are called and sound like, damned good memory!).  I also
+regularly clean out my sample collection by getting rid of any that are bad
+quality - clipped, noisy etc.  Any that I'm unlikely to ever use, or I have
+already used and don't want to use again are also got rid of.<br>
+   In every directory there is a text file called DETAILS.TXT.  This lists
+each file contained in the directory, along with where I got it from.  When
+you have thousands of samples, and you're trying to credit the authors, it
+saves a lot of time and much hair pulling to have the information in one
+place.<br>
+   I would recommend you start off by creating some sort of structure, it'll
+stop your disk getting cluttered and enable you to work more efficiently.  If
+you're running off floppies then use separate disks for different types of
+samples, and regularly defragment and check for errors (this also applies for
+hard disk owners).</p>
+<a name="letsgo"></a>
+   <h3>Let's go</h3>
+
+   <p>By now you should have a tracker you're happy with, some samples, and/or
+some modules.  You're ready to begin being a tracker.<br>
+   I'm going to teach you how to produce a simple tune, and this should
+hopefully guide you as to what you should be doing.<br>
+   This can be done in two ways, either in step-time or in real-time.  The
+majority of modules are produced in step-time, maybe with a small amount of
+real-time just to see roughly where the notes need to be placed.  If you have
+a MIDI keyboard connected to your sound card, then you could use that to
+input the notes.  Generally though, due to the harsh amount of quantisization
+that occurs with a tracker you are better off doing it in step-time.</p>
+
+   <p>I would recommend that you try producing a few 4 channel modules first,
+use one channel for drums, one for bass, one for lead, and one for chords.
+This should help as you'll always be able to see what's going on, on the
+screen.  If you find you do want to use more channels to begin with, then by
+all means go ahead, but bear in mind that most of the great tracker musicians
+today started on 4 channel modules...</p>
+
+<p>   The best way to learn how to do something is to watch someone else do it.
+This applies to tracking as well.  You can learn a lot just from listening to
+the great ones in the scene.  If you come up with a tune idea and you know
+what you want it to sound like, it helps a lot to look for a tune from one of
+the masters that sounds similar to what you want to write, and listen to
+their tune over and over again.  Look for the things they do with their tune
+that sets that tracker apart from the others in the scene, and if you can
+adapt their techniques into your song in an original way, do it.<br>
+   Start by writing music that you really like listening to - don't try and
+write an orchestral piece if you don't listen to it - it'll show.</p>
+
+      <p>If you want to make a tune realistic, try to imagine how the instrument
+would be played.  Pretend you are a musician when you write a part.  Also, if
+you use an instrument such as a piano, try to use more than a single piano
+note - a real piano will have more than one note playing at a time - use some
+chords etc.<br>
+   Originally, people used to sample whole chords to save sample space.  Now
+we've got these wonderful trackers with gazillions of channels.  Constructing
+chords from notes because you have the space to do so gives a better and more
+a professional sound.  However, be very careful!  If you decide to construct
+a chord rather than use a single sample, some musicianship is required.<br>
+Simple major chords are easy, but inversions really add to a piece.  If you
+are able to do it this way, you'll get a professional, crafted sound.  But it
+does take a long time before you'll get a smooth flowing part.<br>
+   For a nice fill to the sound, try to balance the usage of low and high
+frequencies, tunes with too much bass and too little treble sound rough,
+tunes with too much treble and too little bass sound insubstantial.</p>
+<a name="effects"></a>
+   <h3>The Effects Commands</h3>
+   <p>By now you should be wanting to experiment with some effects, to make your
+music more interesting and more professional.  Before we start, lets just get
+something straight.  Effects should only be used when they are needed.  Using
+effects just because you can doesn't automatically improve the quality of
+your music.<br>
+   This section will only cover effects with letters/numbers that can be used
+in ProTracker MODs.  Practically all trackers support these basic effects.
+However many trackers use different letters/numbers to represent the same
+effect, so check before trying anything.  If you try an effect listed here
+and it produces a result completely different to how it is described here,
+then consult your trackers manual.<br>
+   Effects are typed into the rightmost column of each channel in every
+tracker.  They consist of an effect command and a value.  Different trackers
+have different letters and numbers for the same effect command.  But pretty
+much all of them can work with hexadecimal for the value.  If you don't know
+what Hex is, then the following extract, taken from the Impulse Tracker
+manual, should help.</p>
+
+   <p>"Instead of using a decimal system (i.e. base 10), it is more natural for
+the computer to work with hexadecimal (often abbreviated to simply 'Hex') -
+numbers which operate in base 16.  The first 9 numbers in Hex are denoted by
+'1' to '9' and the next 6 are denoted by 'A' to 'F'.  So if you count in Hex,
+it will be as follows: (0), 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, 10,
+11, 12, 13, 14, 15, 16, 17, 18, 19, 1A, 1B, 1C, 1D, 1E, 1F, 20, 21, 22, 23,
+24, 25, 26, 27, 28, 29, 2A etc.<br>
+   To convert a Hex number to decimal, multiply the 'tens' column by 16 and
+add the value of the second column i.e. 32 Hex = 3*16+2 = 50 decimal.  2A Hex
+= 2*16+10 = 42 (because A = 10).  The maximum number that you can represent
+with two Hex digits is FF = 255 decimal."</p>
+
+   <p>Let's start with the most basic effect, the Set Volume command: C. Input a
+note, then move the cursor to the effects command column and type a C. Play
+the pattern, and you shouldn't be able to hear the note you placed the C by.
+This is because the effect parameters are 00.  Change the two zeros to a
+40(Hex)/64(Dec), depending on what your tracker uses.  Play back the pattern
+again, and the note should come in at full volume.</p>
+
+   <p>The Position Jump command next.  This is just a B followed by the position
+in the playing list that you want to jump to.  One thing to remember is that
+the playing list always starts at 0, not 1.  This command is usually in Hex.</p>
+
+   <p>Onto the volume slide command: A. This is slightly more complex (much more
+if you're using a newer tracker, if you want to achieve the results here,
+then set slides to Amiga, not linear), due to the fact it depends on the
+secondary tempo.  For now set a secondary tempo of 06 (you can play around
+later), load a long or looped sample and input a note or two.  A few rows
+after a note type in the effect command A. For the parameters use 0F.  Play
+back the pattern, and you should notice that when the effect kicks in, the
+sample drops to a very low volume very quickly.  Change the effect parameters
+to F0, and use a low volume command on the note.  Play back the pattern, and
+when the slide kicks in the volume of the note should increase very quickly.<br>
+   This because each part of the effect parameters for command A does a
+different thing.  The first number slides the volume up, and the second
+slides it down.  It's not recommended that you use both a volume up and
+volume down at the same time, due to the fact the tracker only looks for the
+first number that isn't set to 0.  If you specify parameters of 8F, the
+tracker will see the 8, ignore the F, and slide the volume up.  Using a slide
+up and down at same time just makes you look stupid.  Don't do it...</p>
+
+   <p>The Set Tempo command: F, is pretty easy to understand.  You simply
+specify the BPM (in Hex) that you want to change to.  One important thing to
+note is that values of lower than 20 (Hex) sets the secondary tempo rather
+than the primary.</p>
+
+   <p>Another useful command is the Pattern Break: D. This will stop the playing
+of the current pattern and skip to the next one in the playing list.  By
+using parameters of more than 00 you can also specify which line to begin
+playing from.</p>
+
+   <p>Command 3 is Portamento to Note.  This slides the currently playing note
+to another note, at a specified speed.  The slide then stops when it reaches
+the desired note.  The best way to describe this is to give an example.</p>
+<pre>
+   C-2 1 000 - Starts the note playing
+   ---   000
+   C-3   330 - Starts the slide to C-3 at a speed of 30.
+   ---   300 - Continues the slide
+   ---   300 - Continues the slide
+</pre>
+
+   <p>One thing you can note about this and many other commands are that they
+have a memory.  Once the parameters have been set, the command can be input
+again without any parameters, and it'll still perform the same function
+unless you change the parameters.  This memory function allows certain
+commands to function correctly, such as command 5, which is the Portamento to
+Note and Volume Slide command.  Once command 3 has been set up command 5 will
+simply take the parameters from that and perform a Portamento to Note.  Any
+parameters set up for command 5 itself simply perform a Volume Slide
+identical to command A at the same time as the Portamento to Note.<br>
+   This memory function will only operate in the same channel where the
+original parameters were set up.<br>
+   There are various other commands which perform two functions at once.
+They will be described as we come across them.</p>
+
+   <p>The next command we'll look at is the Portamento up/down: 1 and 2.
+Command 1 slides the pitch up at a specified speed, and 2 slides it down.
+This command works in a similar way to the volume slide, in that it is
+dependent on the secondary tempo.  Both these commands have a memory
+dependent on each other, if you set the slide to a speed of 3 with the 1
+command, a 2 command with no parameters will use the speed of 3 from the 1
+command, and vice versa.</p>
+
+   <p>Command 4 is Vibrato.  Vibrato is basically rapid changes in pitch, just
+try it, and you'll see what I mean.  Parameters are in the format of xy,
+where x is the speed of the slide, and y is the depth of the slide.  One
+important point to remember is to keep your vibratos subtle and natural so a
+depth of 3 or less and a reasonably fast speed, around 8, is usually used.
+Setting the depth too high can make the part sound out of tune from the rest.<br>
+   Following on from command 4 is command 6.  This is the Vibrato and Volume
+Slide command, and it has a memory like command 5, which you already know how
+to use.</p>
+
+   <p>Command 7 is Tremolo.  This is similar to vibrato.  Rather than changing
+the pitch it slides the volume.  The effect parameters are in exactly the
+same format.</p>
+
+   <p>Command 9 is Sample Offset.  This starts the playback of the sample from a
+different place than the start.  The effect parameters specify the sample
+offset, but only very roughly.  Say you have a sample which is 8765(Hex)
+bytes long, and you wanted it to play from position 4321(Hex).  The effect
+parameter could only be as accurate as the 43 part, and it would ignore the
+21.</p>
+
+   <p>Command B is the Playing List/Order Jump command.  The parameters specify
+the position in the Playing List/Order to jump to.  When used in conjunction
+with command D you can specify the position and the line to play from.</p>
+
+   <p>Command E is pretty complex, as it is used for a lot of different things,
+depending on what the first parameter is.  Let's take a trip through each
+effect in order.<br>
+   Command E0 controls the hardware filter on an Amiga, which, as a low pass
+filter, cuts off the highest frequencies being played back.  There are very
+few players and trackers on other system that simulate this function, not
+that you should need to use it.  The second parameter, if set to 1, turns on
+the filter.  If set to 0, the filter gets turned off.</p>
+
+   <p>Commands E1/E2 are Fine Portamento Up/Down.  Exactly the same functions as
+commands 1/2, except that they only slide the pitch by a very small amount.
+These commands have a memory the same as 1/2 as well.</p>
+
+   <p>Command E3 sets the Glissando control.  If parameters are set to 1 then
+when using command 3, any sliding will only use the notes in between the
+original note and the note being slid to.  This produces a somewhat jumpier
+slide than usual.  The best way to understand is to try it out for yourself.
+Produce a slow slide with command 3, listen to it, and then try using E31.</p>
+
+   <p>Command E4 is the Set Vibrato Waveform control.  This command controls how
+the vibrato command slides the pitch.  Parameters are 0 - Sine, 1 - Ramp Down
+(Saw), 2 - Square.  By adding 4 to the parameters, the waveform will not be
+restarted when a new note is played e.g. 5 - Sine without restart.</p>
+
+   <p>Command E5 sets the Fine Tune of the instrument being played, but only for
+the particular note being played.  It will override the default Fine Tune for
+the instrument.  The parameters range from 0 to F, with 0 being -8 and F
+being +8 Fine Tune.  A parameter of 8 gives no Fine Tune.  If you're using a
+newer tracker that supports more than -8 to +8 e.g. -128 to +128, these
+parameters will give a rough Fine Tune, accurate to the nearest 16.</p>
+
+   <p>Command E6 is the Jump Loop command.  You mark the beginning of the part
+of a pattern that you want to loop with E60, and then specify with E6x the
+end of the loop, where x is the number of times you want it to loop.</p>
+
+   <p>Command E7 is the Set Tremolo Waveform control.  This has exactly the same
+parameters as command E4, except that it works for Tremolo rather than
+Vibrato.</p>
+
+   <p>Command E9 is for Retriggering the note quickly.  The parameter specifies
+the interval between the retrigs.  Use a value of less than the current
+secondary tempo, or else the note will not get retrigged.</p>
+
+   <p>Command EA/B are for Fine Volume Slide Up/Down.  Much the same as the
+normal Volume Slides, except that these are easier to control since they
+don't depend on the secondary tempo.  The parameters specify the amount to
+slide by e.g. if you have a sample playing at a volume of 08 (Hex) then the
+effect EA1 will slide this volume to 09 (Hex).  A subsequent effect of EB4
+would slide this volume down to 05 (Hex).</p>
+
+   <p>Command EC is the Note Cut.  This sets the volume of the currently playing
+note to 0 at a specified tick.  The parameters should be lower than the
+secondary tempo or else the effect won't work.</p>
+
+   <p>Command ED is the Note Delay.  This should be used at the same time as a
+note is to be played, and the parameters will specify the number of ticks to
+delay playing the note.  Again, keep the parameters lower than the secondary
+tempo, or the note won't get played!</p>
+
+   <p>Command EE is the Pattern Delay.  This delays the pattern for the amount
+of time it would take to play a certain number of rows.  The parameters
+specify how many rows to delay for.</p>
+
+   <p>Command EF is the Funk Repeat command (Huge thanks to T-Jay for this
+info!).  The command needs a short loop to work.  It moves the loop through
+the whole length of the sample, e.g.:<br>
+   You have a sample that is 10000 (decimal) bytes long.  You have set the
+sample loop to 0-1000.  When EFx is used, the loop will be moved to 1000-
+2000, then to 2000-3000 etc.  After 9000-10000 the loop is set back to 0-
+1000.  The speed of the loop "movement" is defined by x.  I don't know
+exactly how the speed is specified, but E is two times as slow as F, D is
+three times as slow as F etc.  EF0 will turn the Funk Repeat off and reset
+the loop (to 0-1000).<br>
+   Some information can be slightly wrong, e.g. the loop MAY be moved from 0-
+1000 to 1002-2002, but it isn't important.  Very few trackers actually
+support it.</p>
+<a name="sampling"></a>
+   <center><h2>Sampling</h2></center>
+
+   <h3>Theory</h3>
+
+   <p>Let's talk about all the business that goes on before a sound ever gets to
+your computer's memory.  Sound in the air is continuously changing, and when
+it gets converted to an electrical signal the changes are still continuous.
+Your computer, however, can only store numbers using a limited number of
+digits or precision.  Continuously varying sound is called an analogue
+signal.  Once the computer grabs the sound, it doesn't have enough precision
+to store all the information about the sound in order to perfectly reproduce
+it.  What the computer has stored is called a digital signal representation.<br>
+   Your sound card captures information about an analogue sound signal by
+measuring its intensity at a given instant.  This corresponds to one single
+point on the waveforms we've been looking at.  In order to capture an entire
+waveform, the measurement process must be repeated at a high rate, usually
+thousands of times a second.  Since the hardware has limited speed and memory
+capacity, there are only so many points it can capture.  Any information
+between those points is lost forever.  This process of capturing the sound in
+small intervals is called sampling.<br>
+   To play back a sound, we just reverse the process and convert the digital
+samples back to an analogue signal.  Of course, the new signal will probably
+retain some of the staircase effect, so the reproduction won't be perfect.</p>
+
+   <p>There are four main things to consider when sampling.  The sample
+resolution and frequency, amplitude, and copyright (very important).
+   The sample resolution is another term for the number of bits a sound is
+sampled at.  All trackers can handle 8-Bit samples, and most modern ones are
+able to use 16-Bit samples as well.  Sampling in 16-Bit will render the
+better quality sound all the time.  8-Bit samples can be difficult to
+distinguish from 16-Bit samples, if they are recorded with good hardware.
+But most people would advise 16-Bit samples all the time.<br>
+  The main problem with a lower resolution is that you are likely to get some
+or a lot of noise, depending on the quality of your source.  The only trouble
+with 16-Bit samples is that they are twice as large as 8-Bit ones.  A good
+trick to use is to sample in 16-Bit, do all of your editing in 16-Bit,
+compose with 16-Bit samples, then for the release convert the all the samples
+to 8-Bit.  You'll find you can halve the size of your MOD this way (But make
+sure you keep a copy of the 16-Bit version).  The listener may lose a small
+amount of quality, but this is usually masked by the mixing routine of the
+player.  This may also deter some rippers from using your samples.</p>
+
+   <p>More important than the resolution of the sample when determining quality
+is the sample frequency.  The sample frequency refers to the number of
+"snapshots" of the incoming sound taken per second.  The higher the sampling
+frequency, the better the reproduction of the sound is.<br>
+   So just how many snapshots do we need?  If you look at audio specs much,
+you've seen CD sampling rates of 44.1kHz, or 44,100 samples per second.
+That's a lot of snapshots!  A well-known signal processing theorem (Nyquist
+Theorem) says that to accurately reproduce a signal, you have to sample at a
+rate at least twice the highest frequency component in the signal.  So the CD
+sampling rate of 44.1kHz will capture frequencies up to 22.05kHz.<br>
+   You might be wondering what happens if you don't sample at a high enough
+frequency.  Well, what you get is something called aliasing.  This sinister
+sounding term just means that since the sample points aren't close enough
+together, it looks as though you sampled a lower frequency that really wasn't
+part of the original signal.  Alias frequencies are like ghosts -
+poltergeists really - you can't see them but they make a lot of noise.  So by
+sampling at too low a rate, not only do you miss some of the high
+frequencies; some of them get thrown back into the mix as unwanted guests at
+lower frequencies.  They are audible as background noise and distortion.</p>
+
+   <p>Monitoring the volume of the incoming sound is vital to produce a good
+quality sample.  If your sampler uses oscilloscopes to "view" the sound then
+make sure the waveform gets as close to the top and bottom of the window,
+without flattening out (clipping).  If your sampler uses volume meters
+instead you want to get the sample as near to 0 dB as possible, without going
+above.</p>
+
+   <h3>Practical</h3>
+
+   <p>Okay, you're probably fed up of reading about sampling and actually want
+to do some for yourself.  First of all you need some sampling hardware; on a
+PC virtually every sound card in existence can do some sort of sampling.  On
+an Amiga or Atari you're going to need some extra hardware on top of the
+built in chips.<br>
+   Sample editing isn't really that hard, it's mainly lot of trial and error,
+searching for the precise point where a sound begins and ends.  It takes a
+long time before you'll be able to read a waveform like a book.
+   This is where tracking scores 100% over MIDI.  MIDI samplers will rarely
+have an accurate, easy to see waveform display, and they don't have mice
+either.  One of the few reasons I use Windows 9x is for its sample editors
+and a nice high resolution screen.<br>
+   Start by centralising, and then normalising the sample.  Then, starting at
+the end of the sample zoom in and look for a point on the centre where you
+think your sample ends. Always work from the end first, as any computer will
+find it easier to fill an area of memory with 0s than shifting a large chunk
+of memory around.  If you’re using virtual memory this can speed up editing
+by a huge amount.  Zoom back out to the whole view, does it look like you've
+marked the right place, if it does then mark from that part to the end of the
+sample and delete it. Play back the sample.  If it gets cut off too soon,
+then either paste the cut part back in, or use the undo function built into
+many sample editors.<br>
+   Centralise, and normalise again.  This is because the part you chopped off
+may have been off centre and/or louder than the part you want.  Zoom in, and
+look for where your sample begins.  Cut off anything before that.  Play the
+sample to check you cut off the right part, not too much and not too little.
+If you cut off too much, then simply paste the data back in.<br>
+   Keep on cutting bits off, and playing the sample back, until it sounds how
+you want it to sound.  Do a final centralise and normalise, and save the
+sound to disk.  Give it a meaningful name.  If the sample was from a
+synthesiser preset or a Sample CD then the name from there would be a good
+choice.  If you use a DETAILS.TXT or similar then update it to include this
+new sample.<br>
+   Take the time to tune all your samples as accurately as possible.  To do
+this, play a long, clear, looped sample, then move to another channel and
+tune ALL your other samples to this one sample (so they all have the same
+reference).  Many potentially excellent modules have been spoilt because they
+were poorly tuned.  Of course, this doesn't count the cases where samples are
+intentionally slightly sharp or flat for effect (which should be a rarity
+instead of a rule).</p>
+
+   <h3>Overusing Voice Samples</h3>
+
+   <p>An extremely common mistake made by even some experienced trackers is
+finding a voice clip that they think sounds absolutely great or hilarious,
+and sticking it into their latest song approximately 87 times.  People often
+do this with dance tracks.  This very frequently kills what would otherwise
+be some truly great songs.  No matter how funny or cool something sounds the
+first time you hear it, there are only so many times you can hear and still
+enjoy it.  Also, music is about hearing a melody or grooving to a cool beat,
+not hearing somebody say the same thing over and over again, so your song
+shouldn't rely on voice clips to sound good.  If you delete the voice clips
+from one of your songs and find that it sounds terrible without them, that
+means that you relied too much on the voice clip and don't have enough music.
+Using a truly funny or interesting voice clip once or twice can make a good
+song great, but it can't make a bad song good.</p>
+<a name="ripping"></a>
+   <h3>Ripping</h3>
+
+   <p>There are a number of very important points that should be kept in mind
+when ripping samples.  Look for samples that sound clear and don't have any
+clicking sounds at the point where it loops.  If you're looking for a sample
+of a real instrument, make sure it really sounds like the instrument or else
+it will sound stupid.  Also, the newer the sample, the better.  And finally,
+if you rip samples, it helps a lot if you e-mail the person who made them to
+get permission to use them, but if you don't get permission, at least thank
+the person in the Sample Text.  That's just basic politeness.</p>
+<a name="copyright"></a>
+   <h3>Copyrights</h3>
+
+   <p>Following on from ripping comes copyrights.  If you're not planning to
+ever release a tune commercially then use samples from wherever you like.
+It's extremely unlikely anybody will bother chasing you when they know you
+won't be making any money from it.<br>
+   If however, you eventually want to be able to release your music, then pay
+close attention.  If you sample individual sounds, such as a single bass
+note, you should be able to get away with it (especially if you hear the
+sound in a few commercial tunes).  When you sample large and/or easily
+recognisable parts of any tune, get the samples checked out before you even
+think about releasing yours.  After all, I don't expect you fancy paying out
+large sums of money just because of one simple little sample.</p>
+<a name="releasing"></a>
+   <h3>Releasing</h3>
+
+   <p>Once you've produced a tune you like, you'll probably want other people to
+listen to it, give you feedback etc.  The most important thing to remember at
+the moment is NEVER to publicly release your first couple of tunes.  There
+are very few people who are gifted enough to really make a quality tune the
+first time - it's all practice and experience!  Once you have finished a
+tune, listen to it a couple of days after... see whether you can view it from
+another point of view.  Get a couple of friends to listen to it and ask for
+some constructive criticism.  You know, what's good as well as what's bad
+about the tune.<br>
+   When you feel ready to release a tune, probably the best way of doing so
+is via the Internet.  There are a number of good FTP sites which will allow
+you to upload to them. Unfortunately most of them are incredibly busy, making
+them very slow.  If you don't have to worry about the telephone bill, then by
+all means use them.  If your phone bill plays a part, then probably the best
+way of releasing is to post your tune to alt.binaries.sounds.mods.  You could
+also set up your own web site if you have some web space.  This could be
+either on your own ISP, or on a free site provider like
+<a href="http://www.geocities.com">http://www.geocities.com</a>,
+<a href="http://www.fortunecity.com">http://www.fortunecity.com</a> and
+<a href="http://www.crosswinds.net">http://www.crosswinds.net</a>.</p>
+</BODY>
+</HTML>

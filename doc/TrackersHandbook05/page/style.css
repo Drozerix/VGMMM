@@ -1,0 +1,26 @@
+P  {}
+
+H1  {}
+
+H2  {}
+
+H3  {
+	text-decoration : underline;
+	font-weight : bold;
+}
+
+A  {
+	color : Black;
+	font-style : italic;
+	font-weight : bold;
+	text-decoration : none;
+}
+
+A:Visited  {}
+
+A:Active  {}
+
+A:Hover  {}
+
+BODY  {}
+

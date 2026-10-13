@@ -1,0 +1,319 @@
+<HTML>
+<HEAD>
+	<TITLE>Trackers Handbook - Intermediate</TITLE>
+	<LINK REL="stylesheet" 
+	 TYPE="text/css" 
+	 HREF="style.css" 
+	 TITLE="formal">
+</HEAD>
+
+<BODY BGCOLOR="#888800" LINK="#000088" VLINK="#880000" ALINK="#FFFFCC" BACKGROUND="../images/backg.jpg">
+
+<center><h1>Intermediate</h1></center>
+<a href="Intermediate.htm#effects">Effects</a>&nbsp;-&nbsp;
+<a href="Intermediate.htm#pan">Panning</a>&nbsp;-&nbsp;
+<a href="Intermediate.htm#echo">Echoing</a>&nbsp;-&nbsp;
+<a href="Intermediate.htm#gate">Gating</a>&nbsp;-&nbsp;
+<a href="Intermediate.htm#double">How to avoid doubled up channels</a>&nbsp;-&nbsp;
+<a href="Intermediate.htm#sampling">Sampling (CD-Ripping Drives, Filtering)</a>&nbsp;-&nbsp;
+<hr>
+
+   <p>Ok, I know my way around, I can sample and use effects, and I've released
+some MODs, but just how are certain things done?</p>
+<a name="effects"></a>
+   <h3>Effects</h3>
+
+   <p>There are a number of effects available in the newer trackers that we
+didn't discuss in Section 1.  Be sure that you are familiar with all the
+standard effects before you embark this next voyage of discovery.  These
+effects -have- to be used properly, or they can completely destroy what would
+otherwise be a good track.</p>
+<a name="pan"></a>
+   <h3>Panning</h3>
+
+ <p>  Let’s start with Stereo Panning.  This is the method by which a sound
+appears to come from a certain place between two speakers.
+   Panning is accomplished by use of command 8 (In FT2, in others substitute
+for whatever command they use).<br>
+   It's a simple command to use.  800 will pan the sound to the far left, and
+8FF will pan far right.  Values in between these pan the sound accordingly -
+880 places the sound directly in the centre, 860 places it a little to the
+left, 8D0 places it quite some distance to the right.</p>
+
+   <p>There is also a Stereo Surround feature in a few trackers.  Stereo
+Surround is actually far simpler than it sounds.  Once everything has been
+mixed, either the left waveform or the right waveform of the stereo pair will
+be inverted (turned upside down).  This effect gives the impression of the
+sound (yes, you guessed it!) surrounding you.<br>
+   Stereo Surround works best if you are positioned directly parallel to the
+centre of where the two speakers are e.g.:</p>
+
+<pre>
+Left Speaker ---------+--------- Right Speaker
+                     You</pre>
+
+   <p>It helps if you are fairly close to the speakers as well.  Increasing the
+distance between the speakers increases the surround sensation.<br>
+   There is an inherent problem with this method of Stereo Surround though.
+It only works well if the sound being made surround consists of mainly treble
+frequencies, since most of the lower frequencies get cut out.  This gives the
+sound a hollow feel.  Of course, you can combat this by siting yourself left
+of the left speaker or right of the right speaker, to reduce the surround
+effect.  But why would you want to?</p>
+
+   <p>In most of the newer trackers, panning can also be accomplished through
+the use of the Instrument Parameters.  There will almost certainly be a
+default panning setting.  If you are lucky there will also be a panning
+envelope.<br>
+   The default panning has a similar job to the default volume.  It sets the
+instrument to a particular panning position, which gets used every time the
+instrument is played without a panning command.<br>
+   Panning envelopes offer greater flexibility over the stereo positioning of
+an instrument.</p>
+
+   <p>The problem with panning is that many people don’t know anything about
+panning theory and how to set up their equipment.  Most seem to end up using
+sounds that swing wildly from left to right.  This is agony to listen to!
+Soft bouncing pans can be effective, but should only be used in moderation.</p>
+
+   <h3>Virtual Sound Sources – By XRQ</h3>
+
+   <p>As we all know, musicians and music technicians left mono sound a long
+time ago, simply because the stereo sound sounds much better.
+   The first question is WHY?<br>
+   In mono there is only one source of sound and, therefore, many problems
+occur when one tries to put several instruments on only one speaker. It is
+very difficult to distinguish between them. They practically eat each other
+and do not come out like they're supposed to.<br>
+   Stereo brought us two sound sources and it seemed that the problem would
+be two times easier, however this is not the case. It’s not the fact that
+there are two speakers, it's just that they can give us many more sources of
+sound.<br>
+   The second question is HOW?<br>
+   The answer lies in (what I call) "virtual sound sources"  that are created
+in stereo sound. Everyone who has ever listened to music notices that some
+instruments come from far left (e.g. guitars), some from approximately centre
+(vocals or drums) and some from the right (make up your own example). It is
+described by saying that the instruments are scattered across the PANORAMA
+FIELD.<br>
+   Numerous experiments have shown that a man can tell apart seventeen points
+in the pan-field. To hear this many he would have to have perfect hearing and
+years of studio work behind him. We, the common mortals, hear only 11 or 13,
+if we're lucky. These points are, in fact, my precious "virtual sound
+sources", because the sound comes from there, and there, and there... But
+only with two speakers!<br>
+   The purpose of this writing is to accent the importance of carefully
+balanced music, of a full pan-field, of a volume of every instrument in that
+field which we recognise as the music.<br>
+   So, the third question is - WHAT ONE SHOULD DO WITH THIS KNOWLEDGE?
+   Well, it would be very advisable to look on the pan-settings of your
+tracker and divide the field onto as many points as you wish (not less then
+seven). Well you don’t have to, I did it for you! That is, if you use
+Fasttracker 2.0x. Here's the table (hex values): -</p>
+
+ <b>7 points</b>
+
+<p>00 2A 54 7F AB D5 FF</p>
+
+ <b>9 points</b>
+
+<p>00 1F 3F 5F 7F 9F BF DF FF</p>
+
+ <b>11 points</b>
+
+<p>00 19 32 4C 65 7F 99 B2 CC E5 FF</p>
+
+ <b>13 points</b>
+
+<p>00 15 2A 40 54 6A 7F 94 AB BE D5 E9 FF</p>
+
+   <p>You may have noticed that 00, 7F, and FF are always there; those are
+extreme points - left, centre and right.<br>
+   That's it, then. Balance your music right!</p>
+
+  <h2><center>Techniques</center></h2>
+<a name="echo"></a>
+   <h3>Echoing</h3>
+
+   <p>Do you use echoes on various parts of your MODs?  If not, why not?  They
+are an easy way of filling out the sound.  Really easy to do as well.  Simply
+copy a channel into another empty channel, change the volume of the channel
+down to under half of its current volume, and insert a row in only that
+channel.  Play back the pattern, if it sounds nice, you've succeeded.
+Inserting only a single row will only work well at slow BPMs, however, so
+keep on inserting and playing back until it sounds nice.<br>
+   One point to remember, and this is something I've seen in many MODs, even
+ones produced by masters (I won't give any names), is that if the echo is
+fairly long a few notes will be chopped off the end of the echoed channel
+when you insert rows.  But these notes still exist in the original channel.
+When the tune is played back the echo will appear to stop at the beginning of
+each pattern, and then start again.  This reduces the 'live' feel of the
+entire module.  Just remember to copy the chopped notes onto the beginning of
+the next pattern in the playing list, and everything will sound fine.</p>
+<a name="gate"></a>
+   <h3>Gating</h3>
+
+   <p>Another cool effect (IMHO) is gating.  This is usually done with command
+A.  Load a long/looped sample and set it to maximum volume.  Now input the
+channel below (The notes can be anything, but keep the effects the same) (No
+Volume Column)</p>
+
+<pre>   C-5  1 A0F   -   Starts note, slides volume
+   ---  1 A0F   -   Sets volume to sample default volume, then slides volume
+   ---  1 A0F   -   Sets volume to sample default volume, then slides volume
+   ---  1 A0F   -   Sets volume to sample default volume, then slides volume
+   ---  1 A0F   -   Sets volume to sample default volume, then slides volume
+   ---  1 A0F   -   Sets volume to sample default volume, then slides volume
+   ---  1 A0C   -   Sets volume to sample default volume, then slides volume
+   ---  1 A08   -   Sets volume to sample default volume, then slides volume
+   E-5  1 A0A   -   Starts note, slides volume
+   ---  1 A0A   -   Sets volume to sample default volume, then slides volume
+   ---  1 A08   -   Sets volume to sample default volume, then slides volume
+   ---  1 A06   -   Sets volume to sample default volume, then slides volume
+   D-5  1 A08   -   Starts note, slides volume
+   ---  1 A08   -   Sets volume to sample default volume, then slides volume
+   ---  1 A06   -   Sets volume to sample default volume, then slides volume
+   ---  1 A04   -   Sets volume to sample default volume, then slides volume</pre>
+
+   <p>Now play the pattern, and you should find that you get this choppy sound
+that gets less choppy with the slower slides.  That choppiness is gating.
+Gating works best when used on strings and vocals, but just play around and
+see what you come up with.</p>
+<a name="double"></a>
+   <h3>How to Avoid Doubled Up Channels</h3>
+
+<p>Doubled up channels, simply to increase an instruments volume, are extremely
+bad work.  Not only do they decrease the number of free channels, but
+playback of the instrument will be affected.  This is usually due to slight
+timing errors, and can result in a muffled sound from the mix routine.</p>
+
+<p>There are a couple of ways to avoid having to use doubled up channels.  First
+of all, the not so good ways: -</p>
+
+<p><b>1)</b> By physically altering the samples volume.  This is possibly the worst way
+of doing it.  Altering the samples volume can cause both overdrive from too
+much amplification, and loss of sample data when individual sample
+'snapshots' reach the zero point.  Repeatedly altering the volume WILL cause
+these problems and result in a sample of far lower quality than was started
+with.</p>
+
+<p><b>2)</b> By changing the default volume.  This may or may not cause any
+difficulties, it all depends on what tracker is being used.  In one like FT2
+or PT, the default volume is the same as using a volume command all the time.
+To explain this, here's an example.  You have an instrument that has a
+default volume of 40 (hex), and you are well into composing the tune when you
+decide that the instrument would sound better at 20 (hex).  You change the
+default volume to reflect this.  But you now have a problem; all the volume
+commands and slides for this sample were designed for a sample played at 40
+(hex).  So now the sound gets played back far too loud or disappears
+occasionally, when it didn't before.  It is also far more difficult to get
+smooth sounding volume slides as you only have half as many volume positions
+as before.<br>
+   Something like Impulse Tracker overcomes this problem through the use of a
+Global Volume instrument parameter.  This is a relative volume level, which
+means that any changes to it do not affect how commands work with it
+whatsoever.</p>
+
+And now the really good ways: -<br>
+<p><b>3)</b> Using volume envelopes.  This is my personal favourite.  It works in much
+the same way to the Global Volume in IT.  Therefore IT users and the like can
+ignore this method completely.  This is how this method works.
+   Load a sample, and create a simple two node volume envelope that looks
+something like this.
+
+<pre>Max Volume  - * Node 1
+              |
+              |
+              |
+              |
+Min Volume  - * Node 2</pre>
+
+   The first node should be at the top of the graph, and the second node at
+the bottom.  They should be as close together as possible, creating a near
+vertical slope.  Set Sustain on node 1.
+   That's it!  Now, to set the samples default volume, simply slide Node 1 up
+or down.</p>
+
+<p><b>4)</b> Halve the default volume on loading.  Easy, quick, and effective.
+Whenever you load a sample, change its default volume to half.  This can be
+done using whatever method you like (preferably through Global Volume or
+method (3)).  If you find when mixing that the sound needs more power you can
+increase its volume, without needing to alter any other setting.<br>
+
+   Removing the need to use doubled up channels not only improves the sound
+quality and mix speed, but it makes it easier to produce a track as well.
+There's less scrolling around, and you can see more of the pattern on screen
+at one time.</p>
+<a name="sampling"></a>
+<b></b>
+   <h2><center>Sampling</center></h2>
+
+   <h3>CD Ripping</h3>
+
+   <p>Do you have a CD-ROM drive?  If so, do you use a CD-Ripper?  You should
+do.  A CD-Ripper will allow you to get perfect copies of audio on CDs.<br>
+   You will require a CD-ROM drive and drivers which allow raw data to be
+read off CDs. Below is a compatibility list that should let you know what
+drives have this capability.</p>
+
+   <h3>Drive & Interface</h3>
+
+<p>   LG/GoldStar GCD-R540C – IDE<br>
+   BTC 36x - IDE<br><br>
+
+   (Ok, so it's a little incomplete at the moment!)<br><br>
+
+    If your drive is listed but you seem unable to get it to read raw data,
+there may be a few possible solutions.<br>
+    One problem you will more than likely find in Windows 95 OSR2 and
+possibly Windows 98 is that CD-Rippers will not seem to work with them.  To
+get around this you'll have to bypass Windows 95's 32-Bit disk drivers by
+going to Control Panel/System/Performance/File-System/Troubleshooting/Disable
+All 32-Bit Protect-Mode Disk Drivers.  Note that you must have DOS CD-ROM
+drivers installed for this to work properly.<br>
+    Certain drives and set-ups will have other problems.  One of which is
+that the first read attempt after every reboot will fail or take forever to
+start.  If this happens, eject and reinsert the CD, and try reading again.</p>
+
+   <p>As far as I know, FT2 is the only tracker to have a ripper built in, but
+it isn't very compatible.  If you use DOS for tracking then a CD-ripper
+called CD2Wav seems to work very well, it'll also take advantage of any 32-
+Bit CD-ROM drivers installed if you run it under Windows 9x/NT.  However it
+can't rip specific sections of a CD.  If you want a small 2 second bite of
+sound from the end of the track, you have to rip everything before the part
+you want, which is inconvenient and sometimes impossible.<br>
+   If you want to rip CD-DA on Windows 3.1, then the only package I know of
+is Digital Domain.  This is quite basic, but it does the job quickly and
+effectively.  On Windows 9x/NT, CD-Worx would be a good choice.  CD-Worx
+comes in separate versions for 9x and NT, because NT uses a different way of
+handling things.  CD-Worx is a nice program, with features for ripping from a
+variety of CD formats.  Audiograbber is the one I currently use, simply
+because it always seems to work, and you can specify that if any errors do
+occur simply to carry on.  The free version of Audiograbber does have one
+slight limitation.  It can only grab from a randomly selected set of half the
+tracks on the CD in one session.  If you want a specific track, you have to
+keep on reloading it until that particular track is available!</p>
+
+   <h3>Filtering</h3>
+
+   <p>There are a number of features available in most good sampling programs
+that can be used to improve the quality of the sound.  First of all we’ll
+take a look at filters, usually there will be some sort of controllable
+low/high pass filter that you can use.<br>
+   At their most basic form, filters are used to remove (filter) various
+frequencies from the input signal. The frequencies removed may be lower than
+the cut-off frequency (low pass), higher than the cut-off (high pass), in the
+range between a low cut-off and a high cut-off (band pass), or outside of a
+similar range (band stop).<br>
+   Low pass filters give a sound a deeper, more booming
+   One purpose of using a low pass filter is to remove noise from a low
+pitched bass sample, it can also add fatness to the sample as well.  The most
+important thing to remember is not to use a low pass which lets too high
+frequencies through.  A low pass of about 8kHz seems to work fine in removing
+noise from most bass samples.<br>
+   High pass filters are also useful, and can make very interesting sounds.
+When used on a bass type sound, they can give it a "hollow" quality. The
+higher the cut-off of the filter, the more hollow the sound.</p>
+
+</BODY>
+</HTML>
