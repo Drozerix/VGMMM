@@ -15,7 +15,11 @@ static uint16_t date_now_system(void)
 {
     time_t t = time(nullptr);
     struct tm tmv;
+#ifdef _WIN32
+    localtime_s(&tmv, &t);
+#else
     localtime_r(&t, &tmv);
+#endif
     return (uint16_t)(((tmv.tm_year + 1900) % 100) | (tmv.tm_mday & 0x1f) << 11 | (tmv.tm_mon & 0xf) << 7);
 }
 

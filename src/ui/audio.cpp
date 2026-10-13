@@ -1,4 +1,6 @@
 // Audio output through SDL2 (the original used the waveOut API with a feeder thread).
+// Qt owns main(); keep SDL from renaming it to SDL_main (matters on Windows)
+#define SDL_MAIN_HANDLED
 #include <SDL.h>
 #include <mutex>
 
@@ -31,6 +33,7 @@ bool audio_open(int frames)
 {
     audio_close();
     if (!s_sdlReady) {
+        SDL_SetMainReady();
         if (SDL_InitSubSystem(SDL_INIT_AUDIO) != 0 && SDL_AudioInit("dummy") != 0)
             return false;
         s_sdlReady = true;

@@ -23,6 +23,10 @@ target_include_directories(vgmmm_chips PRIVATE third_party/shim)
 # the sources expect MSVC; the shim header is force-included so its macros are seen first
 target_compile_options(vgmmm_chips PRIVATE -w -fpermissive -std=gnu++98
   -include ${CMAKE_CURRENT_SOURCE_DIR}/third_party/shim/windows.h)
+if(WIN32)
+  # the shim's GetTickCount uses clock_gettime, which MinGW provides through winpthreads
+  target_link_libraries(vgmmm_chips PUBLIC -pthread)
+endif()
 
 # ---- editor core (song data, player, import/export); no GUI dependencies
 add_library(vgmmm_core STATIC
@@ -46,9 +50,16 @@ target_link_libraries(vgmmm-cli PRIVATE vgmmm_core)
 # ---- Qt editor
 if(VGMMM_BUILD_GUI)
   find_package(Qt6 REQUIRED COMPONENTS Widgets)
-  find_package(PkgConfig REQUIRED)
-  pkg_check_modules(SDL2 REQUIRED IMPORTED_TARGET sdl2)
-  pkg_check_modules(ALSA IMPORTED_TARGET alsa)
+  if(WIN32)
+    # pkg-config's sdl2 flags pull in SDL2main/-mwindows, which would fight Qt over WinMain
+    find_package(SDL2 REQUIRED CONFIG)
+    set(VGMMM_SDL2 SDL2::SDL2)
+  else()
+    find_package(PkgConfig REQUIRED)
+    pkg_check_modules(SDL2 REQUIRED IMPORTED_TARGET sdl2)
+    set(VGMMM_SDL2 PkgConfig::SDL2)
+    pkg_check_modules(ALSA IMPORTED_TARGET alsa)
+  endif()
   set(CMAKE_AUTORCC ON)
 
   # Widget construction code is generated from the original Borland forms (tools/dfm2qt.py);
@@ -70,7 +81,12 @@ if(VGMMM_BUILD_GUI)
     res/resources.qrc)
   target_include_directories(vgmmm PRIVATE src/ui)
   target_compile_options(vgmmm PRIVATE -Wall -Wextra)
-  target_link_libraries(vgmmm PRIVATE vgmmm_core Qt6::Widgets PkgConfig::SDL2)
+  target_link_libraries(vgmmm PRIVATE vgmmm_core Qt6::Widgets ${VGMMM_SDL2})
+  if(WIN32)
+    # GUI subsystem (no console window). MinGW's startup code calls main() directly, so Qt's
+    # WinMain shim is not needed; it also fails to link when Qt was built against a newer CRT.
+    set_target_properties(vgmmm PROPERTIES WIN32_EXECUTABLE ON qt_no_entrypoint ON)
+  endif()
   if(ALSA_FOUND)
     target_compile_definitions(vgmmm PRIVATE VGMMM_HAVE_ALSA)
     target_link_libraries(vgmmm PRIVATE PkgConfig::ALSA)
